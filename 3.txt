@@ -1,8 +1,6 @@
 3
 
-Tatianacrispin00
 
-taty_ana06@hotmail.com
 
 https://github.com/Tatiana-C-H/Tatiana_Crispin_Hernandez_IC_0602_Taller_SO
 
@@ -45,15 +43,15 @@ EJERCICIO 2
 
 -5.- imprimir el contenido del primer elemento del array "arrayChar"
 
--6.- imprimir el contenido del primer elemento del puntero "punteroChar"
+---6.- imprimir el contenido del primer elemento del puntero "punteroChar"
 
 *7.- imprimir el contenido del primer elemento del puntero "punteroCharDos"
 
-//8.- imprimir el contenido del quinto elemento del array "arrayChar"
+-8.- imprimir el contenido del quinto elemento del array "arrayChar"
 
-9.- imprimir el contenido del quinto elemento del puntero "punteroChar" con aritmetica de punteros
+-9.- imprimir el contenido del quinto elemento del puntero "punteroChar" con aritmetica de punteros
 
-10.- imprimir el contenido del quinto elemento del puntero "punteroCharDos" con aritmetica de punteros
+-10.- imprimir el contenido del quinto elemento del puntero "punteroCharDos" con aritmetica de punteros
 
 11.- imprimir el contenido de todos los elementos del puntero "punteroCharDos" con aritmetica de punteros y struct repetitiva
 
