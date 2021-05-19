@@ -1,1 +1,64 @@
 3
+
+Tatianacrispin00
+
+taty_ana06@hotmail.com
+
+https://github.com/Tatiana-C-H/Tatiana_Crispin_Hernandez_IC_0602_Taller_SO
+
+
+
+-1.- definir una variable de tipo char de nombre x crear un un puntero hacia un char de nombre p
+
+-2.- definir una variable de tipo char de nombre y crear un un puntero hacia un char de nombre puntero
+
+-3.- inicializar la variable x con valor x
+
+-4.- asignar la dirección en memoria de la variable x al punto p
+
+-5.- imprimir el contenido del puntero p
+
+* 6.- sumar 1 al puntero
+
+-7.- imprimir el contenido del puntero p
+
+-8.- sumar 2 al contenido del puntero p y al macenarlo en el mismo puntero p
+
+-9.- imprimir el contenido del puntero p
+
+-10.- inicializar la variable y con valor y
+
+- 11.- asignar la direccion en memoria de la variable y al puntero "puntero"
+
+- 12.- imprimir el contenido del puntero "puntero"
+
+
+EJERCICIO 2
+
+-1.- crear un array de tamaño 5 de nombre arrayChar de tipo caracter
+
+-2.- inicializar el array char de la a a la e con struct repetitiva
+
+-3.- crear un puntero de nombre char hacia un char "punteChar" e inicializarlo con arrayChar
+
+-4.- crear un puntero hacia un char "punteroCharDos" e inicializarlo con la dirección del primer elemento (index) del array "arrayChar"
+
+-5.- imprimir el contenido del primer elemento del array "arrayChar"
+
+-6.- imprimir el contenido del primer elemento del puntero "punteroChar"
+
+*7.- imprimir el contenido del primer elemento del puntero "punteroCharDos"
+
+//8.- imprimir el contenido del quinto elemento del array "arrayChar"
+
+9.- imprimir el contenido del quinto elemento del puntero "punteroChar" con aritmetica de punteros
+
+10.- imprimir el contenido del quinto elemento del puntero "punteroCharDos" con aritmetica de punteros
+
+11.- imprimir el contenido de todos los elementos del puntero "punteroCharDos" con aritmetica de punteros y struct repetitiva
+
+12.- imprimir el contenido de todos los elementos del puntero "punteroCharDos" con aritmetica de punteros y struct repetitiva
+
+
+
+https://bitbucket.org/fher_m5/_scheduler_threads_fher_public_/src/master/
