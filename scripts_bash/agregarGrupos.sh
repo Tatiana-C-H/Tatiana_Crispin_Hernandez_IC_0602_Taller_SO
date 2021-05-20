@@ -2,13 +2,15 @@
 ROOT_UID=0
 SUCCESS=0
 
-# Run as root, of course. (this might not be necessary, because we have to run the script somehow with root anyway)
+# Rary, because we have to run the script somehow with root anyway)
+# Validacion de que debe ejecutarse como root
 if [ "$UID" -ne "$ROOT_UID" ]
 then
   echo "Se debe estar como root para ejecutar este script"
   exit $E_NOTROOT
 fi  
 
+# validacion de que se le debe pasar un archivo .csv
 file=$1
 
 if [ "${file}X" = "X" ];
@@ -28,17 +30,21 @@ crearGrupo(){
 	#echo "----> Crear Grupo <----"
 	eval nombreGrupo="$1"
 	#echo "nombreGrupo 		  = ${nombreGrupo}"
-	#echo "-------------------------"
 	
-	#-p, --password PASSWORD
-    #Note: This option is not recommended because the password (or encrypted password) will be visible by users listing the processes.
-    #You should make sure the password respects the system's password policy.
-	groupadd "${nombreGrupo}"
-	if [ $? -eq $SUCCESS ];
+	# como eval de errores se verifica la existencia previa de un grupo
+	# el enunciado se lee como: SI grep (encuentra coincidencias)
+	# con el nombre del grupo que se de, en el archivo group
+	if grep -q ${nombreGrupo} /etc/group
+	# entonces no agregues nada y manda un mensaje
 	then
-		echo "Grupo [${nombreGrupo}] agregado correctamente..."
-	else
 		echo "Grupo [${nombreGrupo}] No se pudo agregar..."
+	# si no crea un nuevo grupo
+	else
+		groupadd "${nombreGrupo}"
+		echo "Grupo [${nombreGrupo}] agregado correctamente..."
+		# tambien guardalos en un archivo .csv para su registro
+		echo "${nombreGrupo}" >>gruposCreados.csv
+
 	fi
 }
 

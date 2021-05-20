@@ -3,12 +3,14 @@ ROOT_UID=0
 SUCCESS=0
 
 # Run as root, of course. (this might not be necessary, because we have to run the script somehow with root anyway)
+# Validacion de que debe ejecutarse como root
 if [ "$UID" -ne "$ROOT_UID" ]
 then
   echo "Se debe estar como root para ejecutar este script"
   exit $E_NOTROOT
 fi  
 
+# validacion de que se le debe pasar un archivo .csv
 file=$1
 
 if [ "${file}X" = "X" ];
