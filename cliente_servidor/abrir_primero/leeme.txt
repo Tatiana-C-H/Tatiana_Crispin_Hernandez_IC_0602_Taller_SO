@@ -1,0 +1,21 @@
+Instrucciones para ejecución del ejemplo servidor/cliente
+
+Desde una ventana compila y arrancar el Servidor
+	$gcc server.c -o server
+	$ ./server
+
+
+Desde otra ventana compila y arrancar el Cliente
+	$gcc client.c -o client
+	$ ./client
+
+
+Instrucciones para el uso del ejemplo servidor/cliente
+
+1. Puede haber una conversacion "infinita" entre el servidor y el cliente, y apreciar como cada programa escribe en pantalla la cadena que recibe del
+otro
+2. Para la suma debe escribirse la palabra clave sumita tanto en el servidor como en el cliente.
+	2.1. En el cliente se va agregando conforme las indicaciones las cifras(primera y segunda)
+	2.2. En el servidor se puede contestar para hacer saber al cliente que hemos recibido la informacion (en las impresiones de pantalla yo coloqué "lo tengo" para informar al cliente)
+3. Para salir se debe colocar exit tanto en el cliente como en el servidor
+
